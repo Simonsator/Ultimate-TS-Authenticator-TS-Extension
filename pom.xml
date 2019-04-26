@@ -6,7 +6,7 @@
 
 	<groupId>de.simonsator</groupId>
 	<artifactId>Ultimate-TS-Authenticator-TS-Extension</artifactId>
-	<version>1.0-SNAPSHOT</version>
+	<version>1.0.1-SNAPSHOT</version>
 	<build>
 		<plugins>
 			<plugin>
@@ -14,8 +14,8 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.2</version>
 				<configuration>
-					<source>1.7</source>
-					<target>1.7</target>
+					<source>1.8</source>
+					<target>1.8</target>
 					<encoding>UTF-8</encoding>
 				</configuration>
 			</plugin>
@@ -29,8 +29,8 @@
 	</build>
 	<repositories>
 		<repository>
-			<id>bungeecord-repo</id>
-			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+			<id>Simonsators Repo</id>
+			<url>https://simonsator.de/repo</url>
 		</repository>
 		<repository>
 			<id>Bungee Repo</id>
@@ -45,13 +45,13 @@
 		</dependency>
 		<dependency>
 			<groupId>de.simonsator</groupId>
-			<artifactId>Party-and-Friends-For-Bungeecord-MySQL</artifactId>
-			<version>1.0.141</version>
+			<artifactId>BungeecordPartyAndFriends</artifactId>
+			<version>1.0.72</version>
 		</dependency>
 		<dependency>
 			<groupId>de.simonsator</groupId>
 			<artifactId>PAF-TeamSpeak-Extension</artifactId>
-			<version>0.2.6-SNAPSHOT</version>
+			<version>0.2.15-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 

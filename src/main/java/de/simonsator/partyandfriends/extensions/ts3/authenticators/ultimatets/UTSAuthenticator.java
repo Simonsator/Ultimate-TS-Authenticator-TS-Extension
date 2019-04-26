@@ -32,11 +32,7 @@ public class UTSAuthenticator extends PAFExtension implements Authenticator {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-	}
-
-	public void reload() {
-		onDisable();
-		onEnable();
+		registerAsExtension();
 	}
 
 	public PAFPlayer getPAFPlayer(TS3User pUser) {
