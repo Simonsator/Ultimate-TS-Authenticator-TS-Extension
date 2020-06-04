@@ -1,5 +1,6 @@
 package de.simonsator.partyandfriends.extensions.ts3.authenticators.ultimatets.configuration;
 
+import de.simonsator.partyandfriends.api.PAFExtension;
 import de.simonsator.partyandfriends.utilities.ConfigurationCreator;
 
 import java.io.File;
@@ -11,8 +12,8 @@ import java.io.IOException;
  */
 public class UTSConfiguration extends ConfigurationCreator {
 
-	public UTSConfiguration(File pFile) throws IOException {
-		super(pFile);
+	public UTSConfiguration(File pFile, PAFExtension pPlugin) throws IOException {
+		super(pFile, pPlugin);
 		readFile();
 		loadDefaults();
 		saveFile();
@@ -23,10 +24,6 @@ public class UTSConfiguration extends ConfigurationCreator {
 		set("database.name", "dataBaseName");
 		set("database.user", "root");
 		set("database.password", "password");
-		set("database.useSSL", true);
-	}
-
-	public void reloadConfiguration() throws IOException {
-// deprecated
+		set("database.useSSL", false);
 	}
 }

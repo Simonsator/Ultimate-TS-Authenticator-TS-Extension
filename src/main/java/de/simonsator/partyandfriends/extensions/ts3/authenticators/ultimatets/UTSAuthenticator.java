@@ -10,7 +10,7 @@ import de.simonsator.partyandfriends.extensions.ts3.api.user.TS3User;
 import de.simonsator.partyandfriends.extensions.ts3.api.user.TS3UserManager;
 import de.simonsator.partyandfriends.extensions.ts3.authenticators.ultimatets.communication.UTSMySQL;
 import de.simonsator.partyandfriends.extensions.ts3.authenticators.ultimatets.configuration.UTSConfiguration;
-import net.md_5.bungee.config.Configuration;
+import de.simonsator.partyandfriends.utilities.ConfigurationCreator;
 
 import java.io.File;
 import java.io.IOException;
@@ -25,7 +25,7 @@ public class UTSAuthenticator extends PAFExtension implements Authenticator {
 
 	public void onEnable() {
 		try {
-			Configuration config = new UTSConfiguration(new File(getConfigFolder(), "config.yml")).getCreatedConfiguration();
+			ConfigurationCreator config = new UTSConfiguration(new File(getConfigFolder(), "config.yml"), this);
 			MySQLData mySQLData = new MySQLData(config.getString("database.host"), config.getString("database.user"), config.getString("database.password"), 3306, config.getString("database.name"), null, config.getBoolean("database.useSSL"));
 			connection = new UTSMySQL(mySQLData);
 			TS3UserManager.setAuthenticator(this);

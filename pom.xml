@@ -6,7 +6,10 @@
 
 	<groupId>de.simonsator</groupId>
 	<artifactId>Ultimate-TS-Authenticator-TS-Extension</artifactId>
-	<version>1.0.1-SNAPSHOT</version>
+	<version>1.0.2-SNAPSHOT</version>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
 	<build>
 		<plugins>
 			<plugin>
@@ -41,17 +44,17 @@
 		<dependency>
 			<groupId>net.md-5</groupId>
 			<artifactId>bungeecord-api</artifactId>
-			<version>1.11-SNAPSHOT</version>
+			<version>1.13-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>de.simonsator</groupId>
 			<artifactId>BungeecordPartyAndFriends</artifactId>
-			<version>1.0.72</version>
+			<version>1.0.79</version>
 		</dependency>
 		<dependency>
 			<groupId>de.simonsator</groupId>
 			<artifactId>PAF-TeamSpeak-Extension</artifactId>
-			<version>0.2.15-SNAPSHOT</version>
+			<version>0.4.0-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 

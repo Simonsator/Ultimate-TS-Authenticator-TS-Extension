@@ -2,5 +2,6 @@ name: Ultimate-TS-Authenticator-For-TS-Extension
 version: ${project.version}
 author: Simonsator
 depends: [TS3-Extension-For-PAF]
+depend: [TS3-Extension-For-PAF]
 main: de.simonsator.partyandfriends.extensions.ts3.authenticators.ultimatets.UTSAuthenticator
 description: Uses the data of ultimate ts as authenticator

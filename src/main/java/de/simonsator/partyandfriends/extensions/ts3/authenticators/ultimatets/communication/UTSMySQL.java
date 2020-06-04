@@ -2,7 +2,6 @@ package de.simonsator.partyandfriends.extensions.ts3.authenticators.ultimatets.c
 
 import de.simonsator.partyandfriends.communication.sql.MySQLData;
 import de.simonsator.partyandfriends.communication.sql.SQLCommunication;
-import de.simonsator.partyandfriends.communication.sql.pool.PoolData;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
